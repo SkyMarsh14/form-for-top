@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="speaker-form-header">
+        <h1>Speaker Submission</h1>
+        <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
+    </header>
+    <form action="" method="get" class="speaker-form">
+        <div class="form-row">
+            <label for="user_name">Name</label>
+            <input id="user_name" type="text">
+        </div>
+        <div class="form-row">
+            <label for="user_email">Email</label>
+            <input name='email' id='user_email' type="email" placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+
+                <fieldset class="legacy-form-row">
+                    <legend>Type of Talk</legend>
+                    <input name='type-of-talk' id='main-stage' type="radio">
+                    <label for='main-stage'>Main Stage</label>
+                    <input name='type-of-talk' id="workshop" type="radio">
+                    <label for="workshop">Workshop</label>
+                </fieldset>
+        </div>
+        <div class="form-row">
+            <label for="shirt-size" >T-Shirt Size</label>
+            <select id='shirt-size' name="t-shirt">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="comment">Abstract</label>
+            <textarea name="comment" id="comment"></textarea>
+            <div class="instructions">Describe your talk in 500 words or less</div>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" ></label>
+            <span>I'm actually available the date of the talk</span>
+        </div>
+        <div class="form-row"><button type="submit">submit</button></div>
+    </form>
+</body>
+</html>    
