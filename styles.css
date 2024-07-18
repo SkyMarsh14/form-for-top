@@ -50,10 +50,18 @@ form{
 button{
     background-color: rgba(41, 140, 253, 0.932);
     color:white;
-    padding:5px 30px;
+    padding:5px 40px;
     border-radius:3px;
-    border:white;
+    border:none;
+    cursor: pointer;
     
+}
+.form-row button:hover{
+    background-color: #76aeed;
+}
+
+.form-row button:active{
+    background-color: #407fc7;
 }
 .legacy-form-row{
     border:none;
@@ -157,5 +165,8 @@ button{
 
     .form-row .instructions{
     margin-left:120px;
+    }
+    .form-row button{
+        margin-left:120px;
     }
 }       
